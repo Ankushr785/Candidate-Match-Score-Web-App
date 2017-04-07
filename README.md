@@ -7,8 +7,8 @@ The score has been assigned on the basis of the candidate's job title, past expe
 1. Job Title - CountVectorizer from scikit learn's feature extraction library has been used to create a dictionary of the keywords involved in the job posting, using the '.fit_transform()' function. After that, the job title of every candidate is compared with the created dictionary using the '.transform' function.
 The '.toarray()' funtion creates an array of comparison. This array lets you know how many times every word from the dictionary has been found in the sentence that is being compared.
 
-         e.g If the dictionary contains the following words -> [Machine Learning, Research Engineer]
-         Then the array of the string [['Assistant Engineer']] would be -> [0 0 0 1]
+         e.g If the dictionary contains the following words -> ['Machine Learning, Research Engineer']
+         Then the comparison array of the string ['Assistant Engineer'] would be -> [0 0 0 1]
          
 The motive behind this process is to assess how closely every candidate's job title resembles the required candidature in the job posting. The more words match, the more likely is the candidate appropriate for the job.
 Based on the number of words matched, the candidates are divided into three scoring categories:

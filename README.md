@@ -47,10 +47,10 @@ The total score has been obtained by giving equal weightage to all the individua
          
 Apart from all these, some other criteria might also prove beneficial, like:
  
-         a. Present organization - (Tier 1, Tier 2, Tier 3...)
+         a. Present organization (Tier 1, Tier 2, Tier 3...) - Score categories could be formulated on the basis of the tier in which   the organization lies
          
          b. Graduation College - (Tier 1, Tier 2, Tier 3...)
          
-         c. Projects as well as Independent Courseworks
+         c. Projects as well as Independent Courseworks - Scores on the basis of number of relevant and verified projects and courseworks
 
 The output is a csv file containing the candidate names along with their respective scores.

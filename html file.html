@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Candidate Score Calculator</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+</head>
+<body>
+  <form class="form-horizontal" style="margin:15px" method="post" enctype="multipart/form-data">
+    <fieldset>
+
+      <!-- Form Name -->
+      <legend>Upload your Data</legend>
+
+      <!-- Appended Input-->
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="past_exp">Preferable Past Experience</label>
+        <div class="col-md-2">
+          <div class="input-group">
+            <input id="past_exp" name="past_exp" class="form-control" placeholder="4" maxlength="2" type="text">
+            <span class="input-group-addon">Years</span>
+          </div>
+
+        </div>
+      </div>
+      <!-- Textarea -->
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="job_posting_keywords">Job Posting Keywords</label>
+        <div class="col-md-4">                     
+          <textarea class="form-control" id="job_posting_keywords" name="job_posting_keywords" rows="4">Technical Expert, Analytics, Machine Learning, Financial Services, Human Resources, Legal Services, Engineering, Research, Science</textarea>
+        </div>
+      </div>
+
+      <!-- File Button --> 
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="file">Candidate Data (.xlsx or .xls format only)</label>
+        <div class="col-md-4">
+          <input id="file" name="file" class="input-file" type="file">
+          <p><a data-toggle="modal" data-target="#sampleImage" style="cursor: pointer;">Click to see the expected data format</a></p>
+        </div>
+      </div>
+
+      <!-- Button -->
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="submit"></label>
+        <div class="col-md-4">
+          <button id="submit" name="submit" class="btn btn-primary">Calculate Scores</button>
+        </div>
+      </div>
+
+    </fieldset>
+  </form>
+
+  <!-- Modal -->
+  <div id="sampleImage" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Sample Data</h4>
+        </div>
+        <div class="modal-body">
+          <img style="width: 100%" alt="Sample Input" src="/static/sample_input.png"> </br></br>
+          <p><b>Note:</b> Files must be uploaded in only <i>xlsx</i> or <i>xls</i> format.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>

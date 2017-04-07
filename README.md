@@ -1,5 +1,5 @@
 # Candidate-Match-Score-Web-App
-An NLP based Web-App that asks the user to input some Job Posting along with a candidate to list to give scores to the candidates based on their proficiency in the job profile required as an output.
+An NLP based Web-App that asks the user to input some Job Posting along with a candidate list (in a defined format) to give scores to the candidates based on their proficiency in the job profile required.
 
 The algorithm creates a 10-point score metric to assess how proficient a certain candidate is for a defined job posting based on the LinkedIn profile of the candidate.
 The score has been assigned on the basis of the candidate's job title, past experience and skill endorsements.
@@ -47,4 +47,6 @@ Based on the number of words matched, the candidates are divided into three scor
          
          b. Graduation College - (Tier A, Tier B, Tier C...)
          
-         c. Prijects as well as Independent Courseworks
+         c. Projects as well as Independent Courseworks
+
+The output is a csv file containing the candidate names along with their respective scores.
